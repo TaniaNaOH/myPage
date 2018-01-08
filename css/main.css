@@ -1,0 +1,129 @@
+body {
+background: white;
+font-family: verdana;
+font-size: 20px;
+}
+
+header {
+ text-align: right;
+ background-color: #0000FE;
+ position: fixed;
+ width: 100%;
+ height: 70px;
+ margin-bottom: 10px;
+}
+
+.menu {
+  width: 100%;
+  height: 40px;
+}
+
+.button {
+ display: inline-block;
+ text-align: center;
+ margin-left: 30px;
+ padding: 15px;
+ color: #ffffff;
+ background-color: #FFFF01 ;
+ border-bottom: 8px solid  black;
+ margin: 3px;
+ width: 100px;
+ font-weight: bolder;
+ margin left: 10px;
+ text-decoration: none;
+}
+
+.button:hover {
+ color: #000000;
+ background-color: #FE0000;
+ cursor: pointer;
+ text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 350px 50px;
+    grid-gap: 5px;
+    grid-template-areas:
+        "a a a a a a a a a a a a"
+        "b b b b b b b c c c c c"
+        "d d d d e e e e f f f f";
+      }
+
+      a {
+       color: #000000;
+       font-size: 18px;
+       text-decoration: none;
+       height: 15px;
+       font-family: verdana;
+      }
+
+
+.a {
+    grid-area: a;
+    background: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.b {
+    grid-area: b;
+    background: white;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    font-family: verdana;
+}
+
+.c {
+    grid-area: c;
+    background: white;
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    font-family: verdana;
+}
+.d {
+    grid-area: d;
+    background: white;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.e {
+    grid-area: e;
+    background: white;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.f {
+    grid-area: f;
+    background: white;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+h2 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-family: verdana;
+  background-color: #0000FE;
+}
+
+@media screen and (max-width: 678px) {
+    .container {
+        grid-template-areas:
+        "a a a a a a a a a a a a"
+        "b b b b b b b b b b b b"
+        "c c c c c c c c c c c c"
+        "d d d d d d d d d d d d"
+        "e e e e e e e e e e e e"
+        "f f f f f f f f f f f f";
+    }
+}
